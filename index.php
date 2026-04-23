@@ -142,13 +142,13 @@ if(!is_array($posts)) {
 
   <div class="footer-container">
 
-    <!-- Logo / marca -->
+    
     <div class="footer-col">
       <img src="https://takta.com.br/wp-content/themes/takta-2024.iwwa/img/logos/logo.svg" alt="logo" class="footer-logo">
       <p>Portal de notícias com informação rápida, confiável e atualizada.</p>
     </div>
 
-    <!-- Menu -->
+    
     <div class="footer-col">
       <h3>Menu</h3>
       <ul>
@@ -159,24 +159,23 @@ if(!is_array($posts)) {
       </ul>
     </div>
 
-    <!-- Contato -->
+   
     <div class="footer-col">
       <h3>Contato</h3>
       <p>Email: contato@taktanoar.com</p>
       <p>Telefone: (00) 0000-0000</p>
     </div>
 
-    <!-- Redes -->
+    
     <div class="footer-col">
       <h3>Redes</h3>
 
       <div class="socials">
-        <!-- Instagram -->
+        
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path fill="currentColor" d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-.9a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z"/>
         </svg>
 
-        <!-- TikTok -->
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path fill="currentColor" d="M16 3c.3 1.7 1.6 3 3.3 3.3v3c-1.2 0-2.3-.3-3.3-.9v6.1a5.5 5.5 0 11-5.5-5.5c.4 0 .7 0 1 .1v3.1c-.3-.1-.6-.2-1-.2a2.5 2.5 0 102.5 2.5V3h3z"/>
         </svg>
@@ -185,8 +184,6 @@ if(!is_array($posts)) {
     </div>
 
   </div>
-
-  <!-- Linha final -->
   <div class="footer-bottom">
     <p>© 2026 Taktá no Ar - Todos os direitos reservados</p>
   </div>
