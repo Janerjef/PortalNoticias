@@ -9,12 +9,10 @@ body {
   background: #eaeaea;
 }
 
-
 .top-bar {
   height: 8px;
   background: #e30613;
 }
-
 
 .header {
   display: flex;
@@ -23,7 +21,6 @@ body {
   padding: 25px 60px;
   background: #eaeaea;
 }
-
 
 .logo {
   display: flex;
@@ -39,13 +36,13 @@ body {
 .icon {
   width: 24px;
   height: 24px;
-  color: #0b2c3d; /* cor inicial */
+  color: #0b2c3d;
   transition: 0.3s;
   cursor: pointer;
 }
 
 .icon:hover {
-  color: #e30613; /* cor no hover */
+  color: #e30613;
 }
 
 .takta {
@@ -62,7 +59,6 @@ body {
   border-radius: 4px;
 }
 
-
 .right {
   display: flex;
   align-items: center;
@@ -73,7 +69,6 @@ body {
   font-size: 20px;
   color: #999;
 }
-
 
 .btn {
   background: #0b2c3d;
@@ -89,7 +84,7 @@ body {
   transition: 0.3s;
 }
 
-.btn:hover{
+.btn:hover {
   background: #f50808;
 }
 
@@ -104,6 +99,7 @@ body {
   padding: 15px 60px;
   background: #eaeaea;
   border-bottom: 2px solid #0b2c3d;
+  flex-wrap: wrap;
 }
 
 .menu a {
@@ -113,7 +109,6 @@ body {
   position: relative;
 }
 
-/* barra*/
 .menu a::after {
   content: "";
   position: absolute;
@@ -152,10 +147,9 @@ body {
   font-size: 20px;
 }
 
-
 .carrossel-container {
   background: #083b4c;
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 
 .carrossel {
@@ -165,7 +159,6 @@ body {
   margin: auto;
   overflow: hidden;
 }
-
 
 .slide-carrossel {
   position: absolute;
@@ -180,7 +173,6 @@ body {
   z-index: 1;
 }
 
-
 .card {
   display: flex;
   width: 100%;
@@ -189,6 +181,7 @@ body {
   border-radius: 15px;
   overflow: hidden;
 }
+
 .texto {
   width: 50%;
   padding: 40px;
@@ -234,7 +227,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-} 
+}
 
 .slide {
   background: white;
@@ -255,6 +248,7 @@ main {
   object-fit: cover;
   display: block;
 }
+
 .descricao {
   padding: 20px;
   background: white;
@@ -283,6 +277,7 @@ main {
 .descricao a:hover {
   text-decoration: underline;
 }
+
 .ntprincipal {
   position: relative;
   max-width: 1170px;
@@ -291,6 +286,7 @@ main {
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .ntprincipal:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
@@ -306,7 +302,6 @@ main {
   max-width: 1200px;
   margin: auto;
   padding: 40px 20px;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
@@ -339,13 +334,11 @@ main {
   color: #e30613;
 }
 
-/* Logo */
 .footer-logo {
   width: 180px;
   margin-bottom: 10px;
 }
 
-/* Redes */
 .socials {
   display: flex;
   gap: 15px;
@@ -362,11 +355,149 @@ main {
   color: #e30613;
 }
 
-/* Linha final */
 .footer-bottom {
   text-align: center;
   padding: 15px;
   background: #081f2c;
   font-size: 13px;
   color: #aaa;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px 30px;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .logo img {
+    width: 180px;
+  }
+
+  .btn {
+    margin-right: 0;
+  }
+
+  .menu {
+    padding: 15px 30px;
+    gap: 20px;
+  }
+
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .carrossel {
+    height: 300px;
+  }
+
+  .ntprincipal {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .logo img {
+    width: 160px;
+  }
+
+  .right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .btn {
+    margin-right: 0;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .menu {
+    padding: 12px 20px;
+    gap: 15px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .menu a {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  .carrossel {
+    height: auto;
+  }
+
+  .slide-carrossel {
+    position: relative;
+    opacity: 1;
+  }
+
+  .slide-carrossel:not(.ativo) {
+    display: none;
+  }
+
+  .card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .texto {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .imagem {
+    width: 100%;
+    height: 200px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .ntprincipal {
+    height: auto;
+    margin: 0 20px;
+  }
+
+  .ntprincipal .card {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 130px;
+  }
+
+  .texto h2 {
+    font-size: 18px;
+  }
+
+  .descricao h2 {
+    font-size: 16px;
+  }
+
+  .menu {
+    gap: 12px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
 }
